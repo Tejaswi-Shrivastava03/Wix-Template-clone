@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+{% block content %}
+<div style="background-color: rgb(251, 242, 246);">
+
+    <div class="our-vission">
+        <div>
+            <h1 style="font-size: 90px; padding: 60px;">Crafting Dream Homes</h1>
+        </div>
+        <div class="center-div">
+
+            <div style="width: 50%;"><img src="{{ url_for('static', filename='Screenshot 2025-10-12 222323.png')}}"
+                    alt="" style="width: 600px; height: auto; "> <!-- 588 x 405--></div>
+            <div style="display: flex;flex-direction: column; align-items: left;">
+                <p style="width: 400px; font-size: 19px; padding-bottom: 45px;">
+                    At J.K. Olsen & Hart Home Remodeling, we specialize in transforming houses into dream homes through
+                    expert craftsmanship and personalized designs. Our focus on sustainable practices ensures that every
+                    renovation is not only beautiful but also environmentally friendly.
+                </p><!-- 381 x 140.4-->
+                <a href="{{url_for('home').contact}}"
+                    style="padding: 15px 35px; background-color: #48384c; border-radius: 30px; width: 85px;color: white; text-decoration: none;">Reach
+                    Out</a><!--180 x 48-->
+            </div>
+
+        </div>
+    </div>
+    <div class="our-mission">
+        <div>
+            <h1>Mission</h1>
+        </div>
+        <div class="sb-div">
+            <div style="width: 600px; ">
+                <p>Our mission at J.K. Olsen & Hart Home Remodeling is to provide bespoke kitchen and bathroom
+                    renovations
+                    that
+                    exceed our clients' expectations. We aim to create spaces that are not only visually stunning but
+                    also
+                    functional and sustainable.</p>
+            </div>
+            <div style="width: 600px; ">
+                <p>With a clean and modern visual direction, we focus on lifestyle elements to ensure that every project
+                    reflects the unique personality and needs of our clients.</p>
+            </div>
+        </div>
+    </div>
+    <div class=" team sb-div">
+        <div class="team-member">
+            <div class="team-image">
+                <img src="{{url_for('static', filename='WhatsApp Image 2025-10-12 at 23.25.18_a40dcc2e.jpg')}}" alt="#">
+            </div>
+            <div class="team-info">
+                <h3>JOHN SMITH</h3>
+                <p>Founder and CEO</p>
+                <a href="mailto:info@mysite.com">info@mysite.com</a>
+            </div>
+        </div>
+        <div class="team-member">
+            <div class="team-image">
+                <img src="{{url_for('static', filename='WhatsApp Image 2025-10-12 at 23.26.28_12ccb63c.jpg')}}" alt="#">
+            </div>
+            <div class="team-info">
+                <h3>EMILY DAVIS</h3>
+                <p>Chief Architect</p>
+                <a href="mailto:info@mysite.com">info@mysite.com</a>
+            </div>
+        </div>
+        <div class="team-member">
+            <div class="team-image">
+                <img src="{{url_for('static', filename='WhatsApp Image 2025-10-12 at 23.27.38_2aeff7a8.jpg')}}" alt="#">
+            </div>
+            <div class="team-info">
+                <h3>MARK JOHNSON</h3>
+                <p>Construction Manage</p>
+                <a href="mailto:info@mysite.com">info@mysite.com</a>
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

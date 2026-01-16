@@ -1,0 +1,179 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<div class="craftmanship-section">
+    <div class="craftmanship-content">
+        <h1>Expert Craftsmanship</h1>
+        <p>At J.K. Olsen & Hart Home Remodeling, we specialize in creating homes that reflect your style and values.
+            With
+            our expert craftsmanship and sustainable practices, we turn your house into a dream home</p>
+        <a href="{{url_for('home')}}#service" class="btn">Explore Services</a>
+    </div>
+    <div class="craftmanship-gallery">
+        <img src="{{url_for('static', filename='kitchen.jpeg')}}" alt="Modern Kitchen Design"
+            style="width: 27vw; height: 65vh;">
+        <img src="{{url_for('static', filename='bathroom.png')}}" alt="Modern bathroom Design">
+        <img src="{{url_for('static', filename='hallway.png')}}" alt="Modern wardrobe Design"
+            style="width: 27vw; height: 65vh;">
+    </div>
+</div>
+<!-- about section -->
+<div class="about center-div">
+    <div class="about-content">
+        <h1 class=" animate-on-scroll">About</h1>
+        <p class=" animate-on-scroll">J.K. Olsen & Hart Home Remodeling is dedicated to transforming living spaces with
+            personalized designs and
+            sustainable solutions. Our team of experts brings innovative ideas to reality, ensuring every project is a
+            unique reflection of our client's vision and lifestyle</p>
+        <a class=" animate-on-scroll" href="{{url_for('about')}}">Discover More</a>
+    </div>
+    <div class="about-image">
+        <img src="{{url_for('static', filename='WhatsApp Image 2025-10-12 at 10.49.40_80725063.jpg')}}" alt="">
+    </div>
+</div>
+<!-- service section -->
+
+<div class="service" id="service">
+    <h1 class=" animate-on-scroll">Our Service</h1>
+    <div class="service-section">
+        <div class="service-row">
+            <div>
+                <h2 class=" animate-on-scroll">Home Renovation</h2>
+                <p class=" animate-on-scroll">
+                    Our home renovation services are tailored to meet your specific needs, enhancing the functionality
+                    and
+                    aesthetics of your living space. From kitchen to bathroom renovations, we create spaces that inspire
+                    and
+                    rejuvenate
+                </p>
+            </div>
+            <div>
+                <h2 class=" animate-on-scroll">Custom Solutions</h2>
+                <p class=" animate-on-scroll">
+                    We offer custom solutions to address your unique needs and aspirations for your home. Our team works
+                    closely with you to bring your ideas to life, ensuring a personalized and exceptional outcome
+                </p>
+            </div>
+        </div>
+        <div class="service-row">
+            <div>
+                <h2 class=" animate-on-scroll">Interior Design</h2>
+                <p class=" animate-on-scroll">Our interior design services focus on creating harmonious and stylish
+                    interiors that align with your
+                    taste and preferences. We pay attention to every detail to ensure a cohesive and inviting atmosphere
+                </p>
+            </div>
+            <div>
+                <h2 class=" animate-on-scroll">Project Management</h2>
+                <p class=" animate-on-scroll">
+                    With our efficient project management approach, we oversee every aspect of the renovation process,
+                    from
+                    planning to completion, ensuring a seamless and stress-free experience for our clients
+                </p>
+            </div>
+        </div>
+        <div class="service-row">
+            <div>
+                <h2 class=" animate-on-scroll">Sustainable Practices</h2>
+                <p class=" animate-on-scroll">
+                    Embracing sustainable practices in every project, we aim to reduce the environmental impact of our
+                    work
+                    while creating beautiful, eco-friendly spaces that promote a healthier lifestyle
+                </p>
+            </div>
+            <div>
+                <h2 class=" animate-on-scroll">Quality Assurance</h2>
+                <p class=" animate-on-scroll">
+                    Quality is at the core of our services. We uphold the highest standards in craftsmanship and
+                    materials
+                    to deliver exceptional results that exceed expectations, ensuring your satisfaction
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="contact-link animate-on-scroll center-div">
+        <a href="{{url_for('home')}}#contact" id="contact-btn">Get in Touch</a>
+    </div>
+</div>
+<div class="projects ">
+    <div>
+        <h1 style="color: white;">
+            Projects
+        </h1>
+    </div>
+    <div class="project-gallery center-div">
+        <div class="carousel-slides">
+            <img src="{{url_for('static', filename='image.png')}}" alt="#">
+            <img src="{{url_for('static', filename='Screenshot 2025-10-12 183000.png')}}" alt="#">
+            <img src="{{url_for('static', filename='Screenshot 2025-10-12 183140.png')}}" alt="#">
+            <img src="{{url_for('static', filename='Screenshot 2025-10-12 183109.png')}}" alt="#">
+            <img src="{{url_for('static', filename='Screenshot 2025-10-12 183205.png')}}" alt="#">
+        </div>
+        <button class="previous">❮</button>
+        <button class="next">❯</button>
+    </div>
+</div>
+<div class="testimonial-section animate-on-scroll">
+    <h1>Testimonials</h1>
+    <div class="testimonial-grid">
+        <div class="testimonial">
+            <p class=" animate-on-scroll">"Working with J.K. Olsen & Hart Home Remodeling was a fantastic experience.
+                Their attention to detail and
+                commitment to quality made our home renovation project a success"</p>
+            <h4 class=" animate-on-scroll">Sara - Homeowner</h4>
+        </div>
+        <div class="testimonial align">
+            <p class=" animate-on-scroll">"I highly recommend J.K. Olsen & Hart Home Remodeling for anyone looking to
+                transform their living space.
+                Their innovative designs and professional team exceeded all our expectations"</p>
+            <h4 class=" animate-on-scroll">Mark - Property Developer</h4>
+        </div>
+        <div class="testimonial">
+            <p class=" animate-on-scroll">"The team at J.K. Olsen & Hart Home Remodeling is exceptional. Their
+                dedication to sustainable practices
+                and creative solutions truly sets them apart in the industry"</p>
+            <h4 class=" animate-on-scroll">Lena - Interior Designer</h4>
+        </div>
+    </div>
+</div>
+<div class="contact" id="contact">
+    <div class="contact-form">
+        <div class="contact-intro">
+            <h1>Contact Us</h1>
+            <p>Have a project in mind? Get in touch with us today to discuss your home remodeling needs. We're here to
+                turn
+                your vision into reality</p>
+        </div>
+        <div class="contact-form-section">
+
+
+            <div class="contact-form-item">
+                <label for="fname">First Name*</label><br>
+                <input type="text" name="fname" id="fname" required>
+            </div>
+            <div class="contact-form-item">
+                <label for="lname">Last Name*</label><br>
+                <input type="text" name="lname" id="lname" required>
+            </div>
+            <div class="contact-form-item">
+                <label for="email">Email*</label><br>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="contact-form-item">
+                <label for="phone">Phone</label><br>
+                <input type="tel" name="phone" id="phone">
+            </div>
+            <div class="contact-form-item">
+                <label for="msg">Message</label><br>
+                <input type="text" name="msg" id="msg">
+            </div>
+            <button class="contact-form-item">Submit</button>
+            <!-- <input type="button" name="submit" id="" value="submit" class="contact-form-item"> -->
+        </div>
+
+
+    </div>
+
+
+</div>
+{% endblock %}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='Stylesheet.css')}}">
+    
+    <title>Document</title>
+</head>
+
+<body >
+    
+    <div class="main sb-div">
+        <div class="left-section sb-div">
+            <a href="https://www.wix.com/">WIX</a>
+            <!-- <div class="view" style="height: 28px;width: 31px;"><img src="{{url_for('static', filename='Screen-1--Streamline-Core.png')}}" alt="#" >|<img
+                    src="{{url_for('static', filename='Phone-Mobile-Phone--Streamline-Core.png')}}" alt="#"></div> -->
+           
+
+        </div>
+        <div class="right-section sb-div">
+            <p>Click edit and create your own amazing website</p>
+            <a href="{{url_for('read_more')}}">Read More</a>
+            <a href="https://users.wix.com/signin/signup/password?originUrl=https%3A%2F%2Fmanage.wix.com%2Fedit-template%2Ffrom-intro%3ForiginTemplateId%3De5299424-bc5d-43dc-9b7f-dab1743bd05b%26editorSessionId%3D6baca38a-2132-437c-951f-f9a0cb7f40d8&redirectTo=https%3A%2F%2Fmanage.wix.com%2Fedit-template%2Ffrom-intro%3ForiginTemplateId%3De5299424-bc5d-43dc-9b7f-dab1743bd05b%26editorSessionId%3D6baca38a-2132-437c-951f-f9a0cb7f40d8&overrideLocale=en&forceRender=true">Edit this site</a>
+        </div>
+    </div>
+    <div class="heading sb-div">
+        <div class="nav-brand">
+            <p>J.K. Olsen & Hart Home Remodeling</p>
+        </div>
+        <div class="nav-link">
+            <a href="{{url_for('home')}}" class="nav-link active">Home</a>
+            <a href="{{url_for('about')}}" class="nav-link ">About Us</a>
+            <a href="{{url_for('home')}}#service" class="nav-link ">Service</a>
+            <a href="{{url_for('home')}}#contact" class="nav-link ">Contact</a>
+
+        </div>
+        <div class="nav-contact">
+            <a href="">Contact Us</a>
+        </div>
+    </div>
+
+
+
+
+    {% block content %}
+    {% endblock %}
+    <div class="footer">
+        <h1>J.K. Olsen & Hart Home Remodeling</h1>
+        <div class="footer-content sb-div">
+            <div>
+                <p>+91 1234567890</p>
+                <a data-auto-recognition="true" href="mailto:info@mysite.com"
+                    class="wixui-rich-text__text">info@mysite.com</a>
+                <P>500 Terry Francine St. San Francisco, CA 94158</P>
+                <a href="https://www.instagram.com/wix/#"> <img src="{{url_for('static', filename='instagram.png')}}"
+                        alt=""></a>
+                <a href="https://www.facebook.com/wix"><img src="{{url_for('static', filename='facebook.png')}}"
+                        alt=""></a>
+                <a href="https://www.linkedin.com/wix"></a>
+            </div>
+            <div>
+                <p>Privacy Policy</p>
+                <p>Accessibility Statement</p>
+                <p>© 2035 by J.K. Olsen & Hart Home Remodeling. Powered and secured by Wix</p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="{{url_for('static', filename='script.js')}}"></script>
+</body> 
+</html>
